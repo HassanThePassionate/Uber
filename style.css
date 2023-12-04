@@ -1,0 +1,362 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Uber Move Text";
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.navbar{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    z-index: 999;
+    position: relative;
+    background-color: black;
+    color: #fff;
+    position: relative;
+}
+.navbar .left-p{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    
+}
+.navbar .left-p .left-list {
+display: flex;
+align-self: center;
+gap: 20px;
+list-style: none;
+cursor: pointer;
+
+}
+.navbar .left-p .left-list li{
+    margin-top: 2px;
+    padding: 10px 10px;
+border-radius: 30px;
+transition: 0.8s;
+font-size: 13px;
+
+}
+.navbar .left-p .left-list li:hover{
+background-color: rgb(158, 154, 154);
+padding: 10px 10px;
+border-radius: 30px;
+color: black;
+}
+.navbar .left-p li{
+    position: relative;
+}
+
+.navbar .left-p #drop-down{
+    width: 14vw;
+    height: 72vh;
+    margin-top:2vw ;
+    position: absolute;
+    z-index: 9;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    list-style: none;
+    font-size: 14px;
+    font-weight: 300;
+     font-family:Helvetica Neue;
+    line-height: 30px;
+    padding: 8px 14px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transform: translateY(-190%);
+    transition: 1s;
+
+}
+.navbar .left-p #drop-down li:hover{
+    color: blue;
+}
+
+.left-p img{
+    height: 40px;
+    cursor: pointer;
+}
+#up{
+    padding-left: 12px;
+}
+#down{
+    display: none;
+    padding-left: 12px;
+}
+.navbar .right-list{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    cursor: pointer;
+}
+.navbar .right-list .btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.right-list li{
+    padding: 10px 10px;
+    transition: ease-in 0.51s;
+    border-radius: 30px;
+    font-size: 13px;
+}
+
+.navbar .right-list li:hover{
+    background-color: rgb(158, 154, 154);
+    padding: 10px 10px;
+    border-radius: 30px;
+    color: black;
+    }
+    .navbar .right-list .btn h5{
+        font-size: 15px;
+    }
+    .navbar .right-list .btn h5:nth-child(2){
+       background-color: #fff;
+       color: black;
+       padding: 10px 10px;
+       border-radius: 30px;
+       transition: all 0.5s;
+    }
+    .navbar .right-list .btn h5:nth-child(2):hover{
+        background-color: #706565;
+        color: rgb(255, 255, 255);
+        padding: 10px 10px;
+        border-radius: 30px;
+     }
+     .navbar .right-list .btn h5:nth-child(1){
+        padding: 10px 10px;
+        border-radius: 30px;
+        transition: all 0.5s;
+     }
+     .navbar .right-list .btn h5:nth-child(1):hover{
+        background-color: #706565;
+        color: rgb(255, 255, 255);
+        padding: 10px 10px;
+        border-radius: 30px;
+     }
+
+     .page1 .page-sides{
+        min-height:  90vh;
+        width: 100%;
+        background-color: #000;
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 50px ;
+     }
+     .left-side{
+        width: 40%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        justify-content: center;
+        padding-left: 50px;
+        padding-top: 100px;
+     }
+     .left-side h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+     }
+     .left-side .btns{
+        display: flex;
+        gap: 20px;
+     }
+     .left-side .btns button{
+        padding: 15px 30px;
+        border-radius: 5px;
+    cursor: pointer;
+border: none;
+font-size: 16px;
+font-weight: 600;
+
+     }
+     .left-side .btns button:nth-child(2){
+        background-color: #333333;
+        color: #fff;
+     }
+     .right-side img{
+        margin-right: 70px;
+     }
+
+
+     .page2 .page2-sides{
+        min-height:  100vh;
+        width: 100%;
+        background-color: #fff;
+        color: #000;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 80px ;
+        gap: 80px;
+     }
+     .page2 .page2-sides .left2-side{
+        width: 100%;
+        height: 100%;
+        padding-top: 60px;
+     }
+     .page2 .page2-sides .right2-side{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 50px;
+     }
+     .page2 .page2-sides .right2-side h1{
+        font-size: 52px;
+        padding-bottom: 30px;
+        width: 35vw;
+        line-height: 70px;
+        letter-spacing: -2px;
+        font-weight: 600;
+     }
+     .page2 .page2-sides .right2-side p{
+        width: 33vw;
+        padding-bottom: 15px;
+        line-height: 25px;
+     }
+     .page2 .page2-sides .right2-side .btn-text{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+     }
+     .page2 .page2-sides .right2-side .btn-text button{
+        padding: 15px 25px;
+        border-radius: 5px;
+    cursor: pointer;
+border: none;
+font-size: 16px;
+font-weight: 600;
+background-color: #000;
+color: #fff;
+     }
+     .page2 .page2-sides .right2-side .btn-text h5{
+        font-size: 18px;
+        font-weight: 400;
+       border-bottom: 1px solid gray ;
+       cursor: pointer;
+     }
+
+
+     .page3 .page3-sides{
+        min-height:  100vh;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 50px;
+     }
+     .page3 .page3-sides .left3-side{
+        width: 40%;
+        height: 100%;
+        padding-left: 60px;
+     }
+     .page3 .page3-sides .left3-side h1{
+       font-size: 57px;
+       font-weight: 500;
+
+     }
+     .page3 .page3-sides .left3-side p{
+        font-size: 18px;
+        font-weight: 400;
+        padding: 30px 0;
+ 
+      }
+    
+    .page3 .page3-sides .left3-side .inputs input{
+       width: 80%;
+       padding: 15px 0;
+       padding-left: 15px;
+       border-radius: 10px;
+       border: none;
+        font-size: 16px;
+        margin-bottom: 15px;
+        position: relative;
+        background-color: #EEEEEE;
+     }
+     .page3 .page3-sides .left3-side .inputs input:focus{
+        outline: none;
+     }
+     .page3 .page3-sides .left3-side .inputs svg{
+        position: absolute;
+        right: 67%;
+        top: 292%;
+     }
+     .page3 .page3-sides .left3-side .inputs button{
+        padding: 15px 25px;
+        border-radius: 10px;
+    cursor: pointer;
+border: none;
+font-size: 16px;
+font-weight: 600;
+background-color: #000;
+color: #fff;
+margin-top: 12px;
+     }     
+
+     .page4 .page4-sides{
+      min-height:  100vh;
+      width: 100%;
+      background-color: #fff;
+      color: #000;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 80px ;
+      gap: 80px;
+   }
+
+   .page4 .page4-sides .left4-side{
+      width: 100%;
+      height: 100%;
+      padding-top: 60px;
+   }
+   .page4 .page4-sides .right4-side{
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-bottom: 50px;
+   }
+   .page4 .page4-sides .right4-side h1{
+      font-size: 52px;
+      padding-bottom: 30px;
+      width: 33vw;
+      line-height: 65px;
+      letter-spacing: -2px;
+      font-weight: 600;
+      color: #333333;
+   }
+   .page4 .page4-sides .right4-side p{
+      width: 33vw;
+      padding-bottom: 15px;
+      line-height: 25px;
+   }
+   .page4 .page4-sides .right4-side .btn4-text{
+      display: flex;
+      gap: 20px;
+      align-items: center;
+   }
+   .page4 .page4-sides .right4-side .btn4-text button{
+      padding: 15px 25px;
+      border-radius: 5px;
+  cursor: pointer;
+border: none;
+font-size: 16px;
+font-weight: 600;
+background-color: #000;
+color: #fff;
+   }
+   .page4 .page4-sides .right4-side .btn4-text h5{
+      font-size: 18px;
+      font-weight: 400;
+     border-bottom: 1px solid gray ;
+     cursor: pointer;
+   }
